@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << File.expand_path(File.join(File.dirname( File.symlink?(__FILE__) ? File.readlink(__FILE__) : __FILE__ ), "../lib"))
+
+require 'bundle_merge/application'
+
+BundleMerge::Application.new.run
